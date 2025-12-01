@@ -18,5 +18,5 @@ int main(void)
 		printf("zero\n");
 	else
 		printf("negative\n");
-	return {0};
+	return (0);
 }
