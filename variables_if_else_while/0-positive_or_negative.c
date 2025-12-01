@@ -3,7 +3,7 @@
 #include <time.h>
 /*  Code to generate a random number (do not touch)  */
 /* Your code starts here  */
-/* main: is function */
+/* main - is function */
 int main(void)
 {
 	int n;
