@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*  Code to generate a random number (do not touch)  */
-/* Your code starts here  */
-/* main - is function */
+/**
+ * main - Entry point of the program
+ *
+ * Description: Prints a random number and states
+ *              whether it is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
