@@ -9,15 +9,15 @@
  *
  * Return: Always 0 (Success)
 **/
-        int main(void){
+	int main(void){
 
-                char c = 'a';
+		char c = 'a';
 		char d = 'A';
 
-                for(; c <= 'z'; c++)
-                        putchar(c);
+		for(; c <= 'z'; c++)
+			putchar(c);
               	for(; d <= 'Z'; d++)
 			putchar(d);
-                putchar('\n');
+		putchar('\n');
 		return (0);
 	}           
