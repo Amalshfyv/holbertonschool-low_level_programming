@@ -16,9 +16,11 @@
 
                 for(; c <= 'z'; c++)
                         putchar(c);
-		putchar("\n");
+		putchar('\n');
+	
               	for(; d <= 'Z'; d++)
 			putchar(d);
-                return (0);
+                putchar('\n')
+		return (0);
         }
 ~            
