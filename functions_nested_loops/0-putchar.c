@@ -1,23 +1,16 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Prints the string "_putchar"
  *
- * Description: Uses only putchar to print the text followed
- *              by a new line. Code follows Betty style rules.
+ * Description: Uses the write system call to print the text
+ *              followed by a new line. Complies with Betty style.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char text[] = "_putchar\n";
-	int i;
-
-	for (i = 0; text[i] != '\0'; i++)
-	{
-		putchar(text[i]);
-	}
-
+	write(1, "_putchar\n", 9);
 	return (0);
 }
 
