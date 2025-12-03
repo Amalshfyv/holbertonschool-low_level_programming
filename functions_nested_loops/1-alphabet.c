@@ -3,9 +3,8 @@
 /**
  * print_alphabet - prints the alphabet in lowercase
  *
- * Description: Prints letters 'a' to 'z' followed by a new line.
- *              Only two calls to _putchar are used: one in the loop
- *              for letters and one for the newline.
+ * Description: Prints letters 'a' to 'z' followed by a newline.
+ * Only two calls to _putchar are used.
  */
 void print_alphabet(void)
 {
