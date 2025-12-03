@@ -10,9 +10,9 @@
  * Return: Always 0 (Success)
 **/
 	int main(){
-		char c= 'a';
-		for(; c<= 'z'; c++){
+		char c = 'a';
+		for(; c <= 'z'; c++){
 			putchar(c);
 		}
-		return (0) ;
+		return (0);
 	}
