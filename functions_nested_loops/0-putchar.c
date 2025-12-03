@@ -1,14 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point of the program
+ * main - Prints the string "_putchar"
  *
- * Description: Prints a random number and states
- *              whether it is positive, negative or zero.
+ * Description: Uses only putchar to print the text followed
+ *              by a new line. Code follows Betty style rules.
  *
  * Return: Always 0 (Success)
-**/
-	int main(void){
-	printf('\n', "_putchar");
+ */
+int main(void)
+{
+	char text[] = "_putchar\n";
+	int i;
+
+	for (i = 0; text[i] != '\0'; i++)
+	{
+		putchar(text[i]);
 	}
+
+	return (0);
+}
+
