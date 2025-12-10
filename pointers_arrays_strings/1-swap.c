@@ -1,4 +1,4 @@
-#include " main.h"
+#include "main.h"
 /**
  *swap_int - updates the value to 98
  *@a: input
