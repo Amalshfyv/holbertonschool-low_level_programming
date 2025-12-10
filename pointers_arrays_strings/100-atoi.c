@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _atoi - convert a string to an integer
- * @str: input string
+ * _atoi - it changes string to int
+ * @str: the string
  *
- * Return: integer value
+ * Return: integer
  */
 int _atoi(char *str)
 {
@@ -13,18 +13,19 @@ int _atoi(char *str)
 	unsigned int n = 0;
 	int pow = 1;
 	int is_positive = 1;
+	int started = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
+		{
 			int_count++;
+			started = 1;
+		}
 		else if (str[i] == '-')
 			is_positive *= -1;
-		else
-		{
-			if (int_count > 0)
-				break;
-		}
+		else if (started)
+			break;
 	}
 
 	int_count--;
@@ -37,15 +38,11 @@ int _atoi(char *str)
 				pow *= 10;
 
 			n += (str[i] - '0') * pow;
-
 			int_count--;
 			pow = 1;
 		}
-		else
-		{
-			if (int_count < 0)
-				break;
-		}
+		else if (int_count < 0)
+			break;
 	}
 
 	return (n * is_positive);
