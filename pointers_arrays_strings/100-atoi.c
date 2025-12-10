@@ -50,4 +50,3 @@ int _atoi(char *str)
 
 	return (n * is_positive);
 }
-
